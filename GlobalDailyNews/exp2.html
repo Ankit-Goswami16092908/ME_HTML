@@ -3,203 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Global Daily News</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #142b4a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin-bottom: 5px;
-        }
-
-        nav {
-            background-color: #203e64;
-            text-align: center;
-            padding: 14px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 12px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ffd166;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 0 15px;
-        }
-
-        section {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-
-        h2 {
-            color: #142b4a;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        iframe {
-            max-width: 100%;
-        }
-
-        footer {
-            background-color: #142b4a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer a {
-            color: #ffd166;
-        }
-    </style>
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header id="home">
+    <!-- Header & Navigation Structure -->
+    <center>
         <h1>Global Daily News</h1>
-        <p>Your Trusted Source for the Latest Updates</p>
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#world">World</a>
-        <a href="#sports">Sports</a>
-        <a href="#entertainment">Entertainment</a>
-        <a href="#podcast">Podcast</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <main>
-
-        <!-- World News -->
-        <section id="world">
-            <h2>World News</h2>
-
-            <h3>Global Leaders Discuss Climate Change</h3>
-
-            <p>
-                World leaders continue to discuss climate change
-                and possible solutions for protecting the environment.
-            </p>
-
-            <img
-                src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80"
-                alt="Green hills and the natural environment"
-                width="500"
-            >
-
-            <p>
-                <a href="https://www.bbc.com/news"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Read More on BBC News
-                </a>
-            </p>
-        </section>
-
-        <!-- Sports Update -->
-        <section id="sports">
-            <h2>Sports Update</h2>
-
-            <h3>Latest Sports Highlights</h3>
-
-            <p>
-                Watch a video directly on this news webpage.
-            </p>
-
-            <!-- Replace the video ID to use your own YouTube video -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_pYxYapNPKM?si=fjPLEVsRZbxYlk07" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>
-                <a href="https://www.espn.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Visit ESPN for Sports News
-                </a>
-            </p>
-        </section>
-
-        <!-- Entertainment News -->
-        <section id="entertainment">
-            <h2>Entertainment Buzz</h2>
-
-            <h3>Latest Entertainment Updates</h3>
-
-            <p>
-                Discover the latest movie news, trailers and
-                entertainment updates.
-            </p>
-
-            <!-- Put your own video file in the media folder -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/POz1-EmLsTY?si=bSnY0LhOZT97TkEv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <p>
-                <a href="https://www.imdb.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Explore Movies on IMDb
-                </a>
-            </p>
-        </section>
-
-        <!-- News Podcast -->
-        <section id="podcast">
-            <h2>News Podcast</h2>
-
-            <p>Listen to an audio clip or news podcast.</p>
-
-            <!-- Put your own audio file in the media folder -->
-            <audio controls>
-                <source src="podcast.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </section>
-
-    </main>
-
-    <!-- Contact Us -->
-    <footer id="contact">
-        <h2>Contact Us</h2>
-
+        <p>Your Trusted Source for Latest Updates</p>
+        <hr>
         <p>
-            Email:
-            <a href="mailto:info@globalnews.com">
-                info@globalnews.com
-            </a>
+            <a href="#world">World</a> | 
+            <a href="#sports">Sports</a> | 
+            <a href="#entertainment">Entertainment</a> | 
+            <a href="#podcast">Podcast</a> | 
+            <a href="#contact">Contact</a>
         </p>
+        <hr>
+    </center>
 
-        <p>&copy; 2026 Global Daily News. All rights reserved.</p>
-    </footer>
+    <!-- World News Section -->
+    <h3 id="world">World News</h3>
+    <p>Today's top headline: Global leaders meet to discuss climate change initiatives.</p>
+    <p>
+        <img src="bbc_image.png" alt="BBC World News" width="450" height="230">
+    </p>
+    <p>
+        <a href="https://bbc.com" target="_blank">Read more on BBC</a>
+    </p>
+
+    <!-- Sports Update Section (Embedded YouTube Video) -->
+    <h3 id="sports">Sports Update</h3>
+    <p>Highlights of yesterday's football match with thrilling last-minute goals!</p>
+    <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QZ9yA5lxS1g?si=5H-RBjkIWXbbku7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Entertainment Buzz Section (HTML5 Video Element) -->
+    <h3 id="entertainment">Entertainment Buzz</h3>
+    <p>New movie trailer released today. Fans are excited!</p>
+    <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nIw1O3zvOfE?si=VkboFW_hqJFdIAM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </p>
+
+    <!-- News Podcast Section (HTML5 Audio Element) -->
+    <h3 id="podcast">News Podcast</h3>
+    <p>Listen to today's top headlines:</p>
+    <p>
+        <audio controls>
+            <source src="podcast.mp3" type="audio/mpeg">
+        </audio>
+    </p>
+
+    <!-- Contact Anchor -->
+    <div id="contact"></div>
 
 </body>
 </html>
